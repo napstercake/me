@@ -4,6 +4,9 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { RouterModule } from '@angular/router';
 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModule } from '@angular/material';
+
 import { AppComponent } from './app.component';
 
 // Components
@@ -32,6 +35,12 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
     BrowserModule,
     FormsModule,
     HttpModule,
+    BrowserAnimationsModule,
+    MdButtonModule,
+    MdCardModule,
+    MdMenuModule,
+    MdToolbarModule,
+    MdIconModule,
     RouterModule.forRoot([
       {
         path: 'ini',
@@ -50,11 +59,11 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
         component: ProfileComponent
       },
       {
-        path: 'sign-in',
+        path: 'signin',
         component: SignInComponent
       },
       {
-        path: 'sign-up',
+        path: 'signup',
         component: SignUpComponent
       },
       { 
