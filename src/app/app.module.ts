@@ -11,9 +11,9 @@ import { AppComponent } from './app.component';
 
 // Components
 import { MenuComponent } from './components/menu/menu.component';
+import { FinderComponent } from './components/finder/finder.component';
 
 // Modules
-import { DashboardComponent } from './modules/dashboard/dashboard.component';
 import { HomeComponent      } from './modules/home/home.component';
 import { IniComponent       } from './modules/ini/ini.component';
 import { ProfileComponent   } from './modules/profile/profile.component';
@@ -24,7 +24,7 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
   declarations: [
     AppComponent,
     MenuComponent,
-    DashboardComponent,
+    FinderComponent,
     HomeComponent,
     IniComponent,
     ProfileComponent,
@@ -49,10 +49,6 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
       {
         path: 'home',
         component: HomeComponent
-      },
-      {
-        path: 'dashboard',
-        component: DashboardComponent
       },
       {
         path: 'profile',
