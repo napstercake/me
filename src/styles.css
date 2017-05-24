@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.me-padding-top {
+    padding-top: 56px;
+}
+
+.me-padding-top-container {
+    padding-top: 1em;
+}
