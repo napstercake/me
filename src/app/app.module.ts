@@ -10,8 +10,9 @@ import { MdButtonModule, MdCardModule, MdMenuModule, MdToolbarModule, MdIconModu
 import { AppComponent } from './app.component';
 
 // Components
-import { MenuComponent } from './components/menu/menu.component';
-import { FinderComponent } from './components/finder/finder.component';
+import { MenuComponent    } from './components/menu/menu.component';
+import { FinderComponent  } from './components/finder/finder.component';
+import { AlertComponent   } from './components/alert/alert.component';
 
 // Modules
 import { HomeComponent      } from './modules/home/home.component';
@@ -23,8 +24,12 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
 @NgModule({
   declarations: [
     AppComponent,
+    
     MenuComponent,
+    
     FinderComponent,
+    AlertComponent,
+
     HomeComponent,
     IniComponent,
     ProfileComponent,
