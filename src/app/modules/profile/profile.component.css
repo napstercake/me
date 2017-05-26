@@ -19,3 +19,16 @@
 .me-description {
     margin-top: 5em;
 }
+.me-description .me-description-p {
+    padding: 0 5em;
+    font-size: .8em;
+    color: #8a8a8a;
+}
+.me-content {
+    margin-top: 1em;
+}
+
+h6 {
+    padding: .8em 0;
+    border-bottom: thin solid #ffb7b7;
+}
