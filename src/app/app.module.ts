@@ -17,9 +17,13 @@ import { AlertComponent   } from './components/alert/alert.component';
 // Modules
 import { HomeComponent      } from './modules/home/home.component';
 import { IniComponent       } from './modules/ini/ini.component';
+import { NotFoundComponent  } from './modules/not-found/not-found.component';
 import { ProfileComponent   } from './modules/profile/profile.component';
 import { SignInComponent    } from './modules/sign-in/sign-in.component';
 import { SignUpComponent    } from './modules/sign-up/sign-up.component';
+
+// Core
+import { appRouter } from './core/router/router';
 
 @NgModule({
   declarations: [
@@ -32,6 +36,7 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
 
     HomeComponent,
     IniComponent,
+    NotFoundComponent,
     ProfileComponent,
     SignInComponent,
     SignUpComponent
@@ -46,33 +51,7 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
     MdMenuModule,
     MdToolbarModule,
     MdIconModule,
-    RouterModule.forRoot([
-      {
-        path: 'ini',
-        component: IniComponent
-      },
-      {
-        path: 'home',
-        component: HomeComponent
-      },
-      {
-        path: 'profile',
-        component: ProfileComponent
-      },
-      {
-        path: 'signin',
-        component: SignInComponent
-      },
-      {
-        path: 'signup',
-        component: SignUpComponent
-      },
-      { 
-        path: '',   
-        redirectTo: '/ini', 
-        pathMatch: 'full'
-      },
-    ])
+    RouterModule.forRoot(appRouter)
   ],
   providers: [],
   bootstrap: [AppComponent]
