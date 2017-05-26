@@ -9,7 +9,6 @@ import { ProfileComponent   } from '../../modules/profile/profile.component';
 import { SignInComponent    } from '../../modules/sign-in/sign-in.component';
 import { SignUpComponent    } from '../../modules/sign-up/sign-up.component';
 
-
 export const appRouter:Routes = [
     {
         path: 'ini',

@@ -1,0 +1,21 @@
+.me-portrait {
+    background: url('../../../assets/users/portada.png');
+    background-size: cover;
+    height: 377px;
+    border-bottom: .21em solid #292929;
+}
+
+.me-portrait img {
+    width: 144px;
+    height: 144px;
+    border: .21em solid #f4f4f4;
+    position: absolute;
+    left: 50%;
+    margin-left: -72px;
+    top: 100%;
+    margin-top: -72px;
+}
+
+.me-description {
+    margin-top: 5em;
+}
