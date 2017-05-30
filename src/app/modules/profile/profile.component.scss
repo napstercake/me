@@ -1,14 +1,21 @@
+@import '../../../assets/scss/_variables';
+
+.profile-wrapper {
+    background-color: $cl-white;
+
+}
+
 .me-portrait {
-    background: url('../../../assets/users/portada.png');
+    background: url('../../../assets/img/users/portada.png');
     background-size: cover;
     height: 377px;
-    border-bottom: .21em solid #292929;
+    border-bottom: .21em solid $cl-black;
 }
 
 .me-portrait img {
     width: 144px;
     height: 144px;
-    border: .21em solid #f4f4f4;
+    border: .21em solid $cl-white;
     position: absolute;
     left: 50%;
     margin-left: -72px;
@@ -22,7 +29,7 @@
 .me-description .me-description-p {
     padding: 0 5em;
     font-size: .8em;
-    color: #8a8a8a;
+    color: $cl-light-gray;
 }
 .me-content {
     margin-top: 1em;
@@ -30,5 +37,5 @@
 
 h6 {
     padding: .8em 0;
-    border-bottom: thin solid #ffb7b7;
+    border-bottom: thin solid $cl-light-red;
 }

@@ -21,7 +21,9 @@
       "styles": [
         "../node_modules/bootstrap/dist/css/bootstrap.min.css",
         "../node_modules/font-awesome/css/font-awesome.min.css",
-        "styles.css"
+        "styles.css",
+        "assets/scss/_variables.scss",
+        "assets/scss/_global.scss"
       ],
       "scripts": [
         "../node_modules/tether/dist/js/tether.min.js",
@@ -57,7 +59,8 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
-    "component": {}
+    "styleExt": "scss",
+    "component": {
+    }
   }
 }

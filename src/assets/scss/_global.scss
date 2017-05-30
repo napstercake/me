@@ -1,25 +1,36 @@
+@import './_variables';
+
+body {
+  background-color: $base-background-color;
+  color: $base-text-color;
+}
+
 .me-input {
     background-color: transparent;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
     font-size: 2em;
-    color: #F4F4F4;
-    border-bottom: thin solid #797979;
+    border-bottom: thin solid $cl-gray;
     padding-left: 0;
     font-weight: bolder;
     border-radius: 0;
 }
 
+.me-input:focus {
+  background-color: transparent;
+  color: $cl-white;
+}
+
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-  color: #797979;
+  color: $cl-gray;
 }
 ::-moz-placeholder { /* Firefox 19+ */
-  color: #797979;
+  color: $cl-gray;
 }
 :-ms-input-placeholder { /* IE 10+ */
-  color: #797979;
+  color: $cl-gray;
 }
 :-moz-placeholder { /* Firefox 18- */
-  color: #797979;
+  color: $cl-gray;
 }

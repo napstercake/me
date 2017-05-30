@@ -7,70 +7,70 @@
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/1.jpg"
+            "photo": "assets/img/user/1.jpg"
         },
         {
             "id" : 2,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/2.jpg"
+            "photo": "assets/img/user/2.jpg"
         },
         {
             "id" : 3,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/3.jpg"
+            "photo": "assets/img/user/3.jpg"
         },
         {
             "id" : 4,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/4.jpg"
+            "photo": "assets/img/user/4.jpg"
         },
         {
             "id" : 5,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/5.jpg"
+            "photo": "assets/img/user/5.jpg"
         },
         {
             "id" : 5,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/6.jpg"
+            "photo": "assets/img/user/6.jpg"
         },
         {
             "id" : 5,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/7.jpg"
+            "photo": "assets/img/user/7.jpg"
         },
         {
             "id" : 5,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/8.jpg"
+            "photo": "assets/img/user/8.jpg"
         },
         {
             "id" : 5,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/9.jpg"
+            "photo": "assets/img/user/9.jpg"
         },
         {
             "id" : 5,
             "name" : "Ricardo Gonzales",
             "instruments" : ["Guitarra", "Bateria", "Bajo"],
             "age": 32,
-            "photo": "assets/user/10.jpg"
+            "photo": "assets/img/user/10.jpg"
         }
     ]
 }

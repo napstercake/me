@@ -1,0 +1,28 @@
+@import '../../../assets/scss/_variables';
+
+.me-sign-in-container {
+    margin-top: 13%;
+}
+
+ul.me-social-access {
+    margin: 0;
+    padding: 0;
+}
+
+ul.me-social-access li {
+    display: inline-block;
+    
+}
+ul.me-social-access li a {
+    font-size: 1.2em;
+    padding: .5em;
+    color: $cl-gray;
+}
+ul.me-social-access li a:hover {
+    color: $cl-white;
+}
+.me-bolder {
+    font-size: 2em;
+    color: $cl-gray;
+    font-weight: bolder;
+}
