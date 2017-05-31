@@ -12,11 +12,13 @@ import { SignUpComponent    } from '../../modules/sign-up/sign-up.component';
 export const appRouter:Routes = [
     {
         path: 'ini',
-        component: IniComponent
+        component: IniComponent,
+        data: { title: 'Welcome' }
     },
     {
         path: 'home',
-        component: HomeComponent
+        component: HomeComponent,
+        data: { title: 'Find your bandmate' }
     },
     {
         path: 'profile',

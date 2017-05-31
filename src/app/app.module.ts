@@ -25,6 +25,23 @@ import { SignUpComponent    } from './modules/sign-up/sign-up.component';
 // Core
 import { appRouter } from './core/router/router';
 
+// Services
+import { RouterService } from './core/router/router.service';
+
+// Firebase
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireAuthModule, AngularFireAuth } from 'angularfire2/auth';
+
+export const firebaseConfig = {
+    apiKey: "AIzaSyDYfnQu1PQ2r4L-4_jMUjIPjuc-V-tMiJ4",
+    authDomain: "music-engine-61191.firebaseapp.com",
+    databaseURL: "https://music-engine-61191.firebaseio.com",
+    projectId: "music-engine-61191",
+    storageBucket: "music-engine-61191.appspot.com",
+    messagingSenderId: "262977240441"
+}
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,9 +68,12 @@ import { appRouter } from './core/router/router';
     MdMenuModule,
     MdToolbarModule,
     MdIconModule,
-    RouterModule.forRoot(appRouter)
+    RouterModule.forRoot(appRouter),
+    AngularFireModule.initializeApp(firebaseConfig),
+    AngularFireDatabaseModule,
+    AngularFireAuthModule
   ],
-  providers: [],
+  providers: [RouterService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
