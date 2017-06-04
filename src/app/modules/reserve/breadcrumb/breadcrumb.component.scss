@@ -6,30 +6,44 @@
 .breadcrumb-wrapper ul {
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .breadcrumb-wrapper ul li {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 2em;
+    margin: 0 1em;
+    position: relative;
+    border: 2px solid dodgerblue;
+    background-color: white;
     list-style-type: none;
     display: inline-block;
-    padding: 1em;
+    /*padding: 1em;*/
+}
+
+.breadcrumb-wrapper ul li:first-child::before {
+  display: none;
 }
 
 .breadcrumb-wrapper ul li a {
     color: gray;
     display: block;
-    text-align: center;
-    border: 2px solid gray;
-    border-radius: 50%;
-    padding: .5em;
+}
+
+.breadcrumb-wrapper ul li::before {
+  content: '';
+  position: absolute;
+  top: 1.2em;
+  left: -4em;
+  width: 4em;
+  height: .2em;
+  background: dodgerblue;
+  z-index: -1;
 }
 
 .breadcrumb-wrapper .title {
     display: list-item;
 }
-
-.breadcrumb-wrapper .wire {
-    width: 20px;
-    height: 5em;
-    background-color: gray;
-}
-
