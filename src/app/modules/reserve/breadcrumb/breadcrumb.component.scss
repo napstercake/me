@@ -17,10 +17,10 @@
     border-radius: 2em;
     margin: 0 1em;
     position: relative;
-    border: 2px solid dodgerblue;
-    background-color: white;
+    border: 2px solid gray;
     list-style-type: none;
     display: inline-block;
+    cursor: default;
     /*padding: 1em;*/
 }
 
@@ -28,22 +28,33 @@
   display: none;
 }
 
-.breadcrumb-wrapper ul li a {
-    color: gray;
-    display: block;
-}
-
 .breadcrumb-wrapper ul li::before {
   content: '';
   position: absolute;
   top: 1.2em;
-  left: -4em;
-  width: 4em;
+  left: -2.5em;
+  width: 2.5em;
   height: .2em;
-  background: dodgerblue;
+  background: gray;
   z-index: -1;
 }
 
 .breadcrumb-wrapper .title {
     display: list-item;
 }
+
+
+.breadcrumb-wrapper ul .bc-active {
+    border: 2px solid red;
+    color: red;
+}
+
+.breadcrumb-wrapper ul .bc-active ~ li {
+    border: 2px solid gray;
+}
+
+.breadcrumb-wrapper ul .bc-active ~ li::before {
+    border: 2px solid gray;
+}
+
+
