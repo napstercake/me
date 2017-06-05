@@ -1,4 +1,60 @@
 .breadcrumb-wrapper  {
+    border: thin solid blue;
+    width: 480px;
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+.breadcrumb-wrapper a {
+    display: inline-block;
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 2em;
+    margin: 0 1em;
+    position: relative;
+    color: gray;
+}
+.breadcrumb-wrapper a .circle {
+    width: 3em;
+    height: 3em;
+    text-align: center;
+    line-height: 3em;
+    border-radius: 2em;
+    position: relative;
+    border: 2px solid gray;
+}
+
+.breadcrumb-wrapper a::before {
+  content: '';
+  position: absolute;
+  top: 1.2em;
+  left: -2.5em;
+  width: 2.5em;
+  height: .2em;
+  background: gray;
+  z-index: -1;
+}
+
+.breadcrumb-wrapper a:first-child::before {
+  display: none;
+}
+
+////////////////////
+
+.breadcrumb-wrapper a.bc-active .circle {
+    border: 2px solid red;
+    color: red;
+}
+
+.breadcrumb-wrapper a.bc-active ~ a::before {
+    background: red;
+}
+
+
+/*
+.breadcrumb-wrapper  {
     padding-top: 3em;
     padding-bottom: 3em;
 }
@@ -21,7 +77,6 @@
     list-style-type: none;
     display: inline-block;
     cursor: default;
-    /*padding: 1em;*/
 }
 
 .breadcrumb-wrapper ul li:first-child::before {
@@ -43,7 +98,6 @@
     display: list-item;
 }
 
-
 .breadcrumb-wrapper ul .bc-active {
     border: 2px solid red;
     color: red;
@@ -56,5 +110,5 @@
 .breadcrumb-wrapper ul .bc-active ~ li::before {
     border: 2px solid gray;
 }
-
+*/
 
