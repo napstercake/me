@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+    
 
 @Component({
   selector: 'me-breadcrumb',
@@ -9,10 +10,11 @@ import { Component, OnInit } from '@angular/core';
 export class BreadcrumbComponent implements OnInit {
 
     constructor() {
-        console.log('breadcrumb is working');
+        
     }
 
     ngOnInit() {
+        console.log('init!');
     }
 
 }

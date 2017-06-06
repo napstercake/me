@@ -11,7 +11,7 @@ export class IniComponent implements OnInit {
     constructor(
         private afdb : AngularFireDatabase
     ) {
-        console.log(afdb.list('/items'));
+        //console.log(afdb.list('/items'));
     }
 
     ngOnInit() {
