@@ -30,21 +30,19 @@ export const appRouter:Routes = [
     },
     {
         path: 'reserve',
-        component: ReserveComponent,
-        children: [
-            {
-                path: 'step1',
-                component: Step1Component
-            },
-            {
-                path: 'step2',
-                component: Step2Component
-            },
-            {
-                path: 'step3',
-                component: Step3Component
-            }
-        ]
+        component: ReserveComponent
+    },
+    {
+        path: 'step1',
+        component: Step1Component
+    },
+    {
+        path: 'step2',
+        component: Step2Component
+    },
+    {
+        path: 'step3',
+        component: Step3Component
     },
     {
         path: 'signin',

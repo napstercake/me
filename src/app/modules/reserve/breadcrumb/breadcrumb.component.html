@@ -1,19 +1,22 @@
 <div class="breadcrumb-wrapper">
-
-  <a routerLink="step1" routerLinkActive="bc-active">
+<!-- 
+  https://stackoverflow.com/questions/39532454/change-active-tab-in-navbar-when-router-navigate-is-used
+  https://plnkr.co/edit/6WFsnxv3jDsxcuc3AFYB?p=preview
+  -->
+  <div class="breadcrumb-block" routerLinkActive="bc-active">
     <span class="fa fa-user-o circle"></span>
     <span class="title">Step1</span>
-  </a>
+  </div>
 
-  <a routerLink="step2" routerLinkActive="bc-active">
+  <div class="breadcrumb-block" routerLinkActive="bc-active">
     <span class="fa fa-handshake-o circle"></span>
     <span class="title">Step2</span>
-  </a>
+  </div>
 
-  <a routerLink="step3" routerLinkActive="bc-active">
+  <div class="breadcrumb-block" routerLinkActive="bc-active">
     <span class="fa fa-check circle"></span>
     <span class="title">Step3</span>
-  </a>
+  </div>
 
 </div>
 <!--

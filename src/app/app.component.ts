@@ -12,9 +12,12 @@ export class AppComponent implements OnInit{
 
   constructor(private router: Router) {
     
+    /**
+     * Subscribe to router change
+     */
     this.router.events.subscribe(event => {
       if (event instanceof NavigationStart) {
-        if (event.url.indexOf("/reserve") > -1) {
+        if (event.url.indexOf("/reserve") > -1 || event.url.indexOf("/step") > -1) {
           this.hideBreadcrumb = false;
         } else {
           this.hideBreadcrumb = true;
